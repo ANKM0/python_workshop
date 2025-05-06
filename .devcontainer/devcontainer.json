@@ -1,0 +1,16 @@
+{
+    "name": "Python 3.12 + Poetry",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-python.vscode-pylance"
+    ],
+    "postCreateCommand": "poetry install --no-root",
+    "remoteUser": "vscode"
+  }
